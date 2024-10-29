@@ -36,9 +36,5 @@
 
   .body.costas {
     background-size: cover;
-
-    & .mainBody {
-      margin-top: 20rem;
-    }
   }
 }

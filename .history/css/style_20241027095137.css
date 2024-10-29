@@ -395,7 +395,7 @@ main {
       }
 
       &.braco {
-        background-image: url(/imagens/braço.png);
+        background-image: url(/Treino/imagens/braço.png);
 
         &::after {
           content: 'Braço';
@@ -403,7 +403,7 @@ main {
       }
 
       &.perna {
-        background-image: url(/imagens/perna.png);
+        background-image: url(/Treino/imagens/perna.png);
 
         &::after {
           content: 'Perna';
@@ -411,7 +411,7 @@ main {
       }
 
       &.ombro {
-        background-image: url(/imagens/ombro.png);
+        background-image: url(/Treino/imagens/ombro.png);
 
         &::after {
           content: 'Ombro';
@@ -419,7 +419,7 @@ main {
       }
 
       &.costas {
-        background-image: url(/imagens/costasHDrecortada.png);
+        background-image: url(/Treino/imagens/costasHDrecortada.png);
 
         &::after {
           content: 'Costas';
@@ -427,14 +427,14 @@ main {
       }
 
       &.peito {
-        background-image: url(/imagens/peito.png);
+        background-image: url(/Treino/imagens/peito.png);
 
         &::after {
           content: 'Peito';
         }
       }
       &.abdomen {
-        background-image: url(/imagens/abdomen.png);
+        background-image: url(/Treino/imagens/abdomen.png);
 
         &::after {
           content: 'Abdomen';
