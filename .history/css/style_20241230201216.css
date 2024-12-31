@@ -102,7 +102,7 @@ body.fade-out {
 main {
   height: 100%;
   width: 100%;
-  margin-top: 10rem;
+  margin-top: 17rem;
 }
 
 .botao {
@@ -444,7 +444,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 4.5rem;
-    padding-bottom: 4.5rem;
+    padding: 4.5rem 0;
 
     & .maquinas {
       display: flex;

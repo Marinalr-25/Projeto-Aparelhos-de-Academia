@@ -125,14 +125,15 @@
     }
     &.costas {
       & .mainBody {
-        margin-top: 15rem;
+        margin-top: 12rem;
         & .container {
           flex-direction: row;
           justify-content: center;
           flex-wrap: wrap;
+          padding-top: 3.5rem;
           & .maquinas {
             flex-direction: column;
-            width: 32rem;
+            width: 40rem;
             height: auto;
             & .img-maquinas {
               display: block;

@@ -270,22 +270,6 @@ main {
           font-size: 1.92rem;
         }
       }
-
-      & .aparelhos {
-        width: 16.6rem;
-        position: absolute;
-        padding: 1.6rem;
-
-        &.esquerda {
-          top: 15px;
-          left: 0;
-        }
-
-        &.direita {
-          bottom: 0;
-          right: 0;
-        }
-      }
     }
 
     & .terceira-tela {
@@ -395,7 +379,7 @@ main {
       }
 
       &.braco {
-        background-image: url(/Treino/imagens/braço.png);
+        background-image: url(/imagens/braço.png);
 
         &::after {
           content: 'Braço';
@@ -411,7 +395,7 @@ main {
       }
 
       &.ombro {
-        background-image: url(/Treino/imagens/ombro.png);
+        background-image: url(/imagens/ombro.png);
 
         &::after {
           content: 'Ombro';
@@ -419,7 +403,7 @@ main {
       }
 
       &.costas {
-        background-image: url(/Treino/imagens/costasHDrecortada.png);
+        background-image: url(/imagens/costasHDrecortada.png);
 
         &::after {
           content: 'Costas';
@@ -427,14 +411,14 @@ main {
       }
 
       &.peito {
-        background-image: url(/Treino/imagens/peito.png);
+        background-image: url(/imagens/peito.png);
 
         &::after {
           content: 'Peito';
         }
       }
       &.abdomen {
-        background-image: url(/Treino/imagens/abdomen.png);
+        background-image: url(/imagens/abdomen.png);
 
         &::after {
           content: 'Abdomen';
@@ -482,6 +466,7 @@ main {
 
     & .info {
       font-size: 1.5rem;
+      line-height: 1.4;
     }
 
     & .img-maquinas {

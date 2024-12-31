@@ -444,7 +444,6 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 4.5rem;
-    padding-bottom: 4.5rem;
 
     & .maquinas {
       display: flex;
@@ -452,7 +451,7 @@ main {
       gap: 3.5rem;
       max-width: 130rem;
       border: 1px solid var(--cor-fundo);
-      padding: 2rem;
+      padding: 1rem;
       border-radius: 1.5rem;
 
       & .title {
@@ -467,7 +466,6 @@ main {
 
     & .info {
       font-size: 1.5rem;
-      line-height: 1.4;
     }
 
     & .img-maquinas {
