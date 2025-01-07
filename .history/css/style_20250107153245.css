@@ -84,7 +84,7 @@ body.fade-out {
     background-color: (var(--cor-fundo));
     & ul {
       display: flex;
-      gap: 1.5rem;
+      gap: 2rem;
       color: white;
       list-style: none;
       & a {

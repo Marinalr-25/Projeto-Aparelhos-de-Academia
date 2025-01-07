@@ -2,7 +2,7 @@
   .body.costas {
     background-size: cover;
     & .mainBody {
-      margin-top: 10rem;
+      margin-top: 8rem;
       & .container {
         & .maquinas {
           display: grid;

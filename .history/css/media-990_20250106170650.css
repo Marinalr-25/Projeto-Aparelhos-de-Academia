@@ -1,0 +1,59 @@
+@media all and (max-width: 61.87em) {
+  .body.costas {
+    background-size: cover;
+    & .mainBody {
+      margin-top: 5rem;
+      & .container {
+        & .maquinas {
+          width: 94vw;
+          height: 27rem;
+          gap: 1.8rem;
+
+          & .img-maquinas {
+            & img {
+              width: 18rem;
+              height: 18rem;
+            }
+          }
+
+          & .informacoes {
+            max-width: 100%;
+            gap: 1rem;
+            padding: 0;
+            & .title {
+              font-size: 2rem;
+              line-height: 1;
+            }
+
+            & .separar {
+              gap: 0.6rem;
+            }
+
+            & .infos {
+              & .h3 {
+                font-size: 1.5rem;
+              }
+              & .info {
+                font-size: 1.4rem;
+              }
+            }
+          }
+
+          & .exercicios {
+            max-width: 100%;
+            gap: 1rem;
+
+            & .title {
+              font-size: 2rem;
+            }
+
+            & ul li {
+              font-size: 1.4rem;
+              padding-bottom: 0rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

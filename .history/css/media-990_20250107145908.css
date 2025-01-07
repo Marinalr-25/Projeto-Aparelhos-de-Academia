@@ -2,13 +2,12 @@
   .body.costas {
     background-size: cover;
     & .mainBody {
-      margin-top: 10rem;
+      margin-top: 5rem;
       & .container {
         & .maquinas {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: 1fr 1fr;
           grid-template-rows: auto;
-          justify-items: start;
           gap: 1.8rem;
 
           & .img-maquinas {

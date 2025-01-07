@@ -79,12 +79,12 @@ body.fade-out {
   & nav {
     display: flex;
     align-items: center;
-    padding-right: 2rem;
+    padding: 0 2rem;
     color: (var(--cor-texto));
     background-color: (var(--cor-fundo));
     & ul {
       display: flex;
-      gap: 1.5rem;
+      gap: 2rem;
       color: white;
       list-style: none;
       & a {

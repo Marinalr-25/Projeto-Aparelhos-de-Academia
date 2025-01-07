@@ -3,6 +3,10 @@
     font-size: 56.25%;
   }
 
+  .header {
+    font-size: 2rem;
+  }
+
   .tela-inicial {
     & .box-inicial {
       & .segunda-tela {
@@ -128,21 +132,16 @@
           flex-wrap: wrap;
           padding-top: 3.5rem;
           & .maquinas {
-            display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto;
-            gap: 2.5rem;
+            grid-template-rows: 3;
             width: 40rem;
+            height: auto;
             & .img-maquinas {
               display: block;
               margin: 0 auto;
-              grid-column: 1;
-              grid-row: 1;
             }
 
             & .informacoes {
-              grid-column: 1;
-              grid-row: 2;
               & .title {
                 font-size: 2rem;
                 line-height: 1;
@@ -160,8 +159,6 @@
             & .exercicios {
               width: 100%;
               gap: 0.5rem;
-              grid-column: 1;
-              grid-row: 3;
 
               & ul li {
                 font-size: 1.6rem;

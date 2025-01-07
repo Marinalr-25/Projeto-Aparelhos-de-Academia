@@ -3,6 +3,10 @@
     font-size: 56.25%;
   }
 
+  .header {
+    font-size: 2rem;
+  }
+
   .tela-inicial {
     & .box-inicial {
       & .segunda-tela {
@@ -131,8 +135,7 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto;
-            gap: 2.5rem;
-            width: 40rem;
+            gap: 1rem;
             & .img-maquinas {
               display: block;
               margin: 0 auto;

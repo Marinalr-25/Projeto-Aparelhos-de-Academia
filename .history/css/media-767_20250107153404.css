@@ -3,6 +3,10 @@
     font-size: 56.25%;
   }
 
+  .header {
+    font-size: 2.1remrem;
+  }
+
   .tela-inicial {
     & .box-inicial {
       & .segunda-tela {

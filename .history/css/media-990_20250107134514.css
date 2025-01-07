@@ -2,21 +2,21 @@
   .body.costas {
     background-size: cover;
     & .mainBody {
-      margin-top: 10rem;
+      margin-top: 5rem;
       & .container {
         & .maquinas {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: auto;
-          justify-items: start;
+          grid-template-columns: 2;
+          width: 94vw;
+          height: 27rem;
           gap: 1.8rem;
 
           & .img-maquinas {
             align-self: center;
-            grid-column: 1;
-            grid-row: 1 / span 2;
-            justify-self: center;
-            align-self: center;
+            & img {
+              max-width: 20rem;
+              max-height: 20rem;
+            }
           }
         }
 
@@ -24,8 +24,6 @@
           max-width: 100%;
           gap: 1rem;
           padding: 0;
-          grid-column: 2;
-          grid-row: 1;
           & .title {
             font-size: 2rem;
             line-height: 1;
@@ -48,8 +46,6 @@
         & .exercicios {
           max-width: 100%;
           gap: 1rem;
-          grid-column: 2;
-          grid-row: 2;
 
           & .title {
             font-size: 2rem;
