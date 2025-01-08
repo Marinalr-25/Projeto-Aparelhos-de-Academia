@@ -1,0 +1,104 @@
+:root {
+  --cor-fundo: #006400;
+  --cor-texto: #00c957;
+  --verde-primario: #006400;
+  --verde-secundario: #00c957;
+  --azul-primario: #0d6bb2;
+  --azul-secundario: #83e3ff;
+  --rosa-primario: #ae2478;
+  --rosa-secundario: #eed3e4;
+  --vermelho-primario: #a50000;
+  --vermelho-secundario: #e4b2b2;
+  --roxo-primario: #4c4c99;
+  --roxo-secundario: #c9c9e0;
+  --laranja-primario: #ff6c37;
+  --laranja-secundario: #ffd2c3;
+}
+
+.pop-up-temas {
+  display: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  &.aberto {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    height: 18rem;
+    background-color: rgba(0, 0, 0, 0.95);
+    border-radius: 1.5rem;
+
+    & .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-direction: row;
+      padding: 2rem;
+      max-width: 65rem;
+      position: relative;
+
+      & .bolinha {
+        width: 4rem;
+        height: 4rem;
+        margin: 0.5rem;
+        border-radius: 50%;
+
+        &.verde {
+          background: linear-gradient(
+            to right,
+            var(--verde-primario) 50%,
+            var(--verde-secundario) 50%
+          );
+        }
+        &.azul {
+          background: linear-gradient(
+            to right,
+            var(--azul-primario) 50%,
+            var(--azul-secundario) 50%
+          );
+        }
+
+        &.rosa {
+          background: linear-gradient(
+            to right,
+            var(--rosa-primario) 50%,
+            var(--rosa-secundario) 50%
+          );
+        }
+        &.vermelho {
+          background: linear-gradient(
+            to right,
+            var(--vermelho-primario) 50%,
+            var(--vermelho-secundario) 50%
+          );
+        }
+        &.roxo {
+          background: linear-gradient(
+            to right,
+            var(--roxo-primario) 50%,
+            var(--roxo-secundario) 50%
+          );
+        }
+        &.laranja {
+          background: linear-gradient(
+            to right,
+            var(--laranja-primario) 50%,
+            var(--laranja-secundario) 50%
+          );
+        }
+      }
+      & .icone-fechar {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: var(--cor-texto);
+        z-index: 10001;
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+  }
+}
