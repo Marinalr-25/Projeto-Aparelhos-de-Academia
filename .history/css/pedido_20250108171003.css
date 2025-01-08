@@ -138,8 +138,6 @@
     &.aberto {
       & .container {
         width: 80vw;
-        overflow: scroll;
-        overflow-x: hidden;
       }
     }
   }
@@ -149,7 +147,9 @@
   .pop-up-pedido {
     &.aberto {
       & .container {
-        height: 90svh;
+        height: 80svh;
+        overflow: scroll;
+        overflow-x: hidden;
         & .box {
           flex-direction: column;
           & .column {
