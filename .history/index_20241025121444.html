@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treino</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="css/media-767.css"
+      media="(max-width: 767px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/media-660.css"
+      media="(max-width: 660px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/media-580.css"
+      media="(max-width: 580px)"
+    />
+  </head>
+  <body>
+    <section class="tela-inicial">
+      <div class="box-inicial">
+        <div class="primeira-tela">
+          <div class="container">
+            <h1>
+              <span>Bem vindo(a),</span> inimigo ou inimiga dos nomes confusos!
+            </h1>
+            <h2>
+              Vamos juntos <span>vencer</span> essa batalha dos aparelhos?
+            </h2>
+            <p>Diga seu nome para continuarmos esta jornada</p>
+          </div>
+          <div class="input">
+            <input
+              type="text"
+              id="nome"
+              autocomplete="off"
+              placeholder="Digite seu nome aqui"
+            />
+            <img
+              class="mulher-icone"
+              src="imagens/mulher (branco).png"
+              alt="icone-mulher"
+            />
+            <button type="submit" id="comecar" class="botao">Começar</button>
+          </div>
+        </div>
+        <div class="segunda-tela">
+          <div class="topo">
+            <h2 class="h2-muitoBem">
+              Muito bem, <span id="nome-saudacao">fulano</span>
+            </h2>
+          </div>
+          <div class="container">
+            <h2>
+              Chega de ficar <span>pesquisando</span> nome por nome na internet!
+            </h2>
+            <p>
+              Aqui <span>vamos aprender</span> os nomes e nunca mais esquecer!
+            </p>
+            <p>Você está comigo <span>Guerreiro(a)?</span></p>
+            <div class="imgs">
+              <img
+                class="aparelhos esquerda"
+                src="imagens/aparelho1.png"
+                alt=""
+              />
+              <img
+                class="aparelhos direita"
+                src="imagens/aparelho2.png"
+                alt=""
+              />
+              <button id="proximo" class="botao">Próximo!</button>
+            </div>
+          </div>
+        </div>
+        <div class="terceira-tela">
+          <div class="container">
+            <h2>
+              Se o nome de algum aparelho estiver faltando, você pode
+              <span> enviar um pedido </span> para adicioná-lo, e um e-mail será
+              enviado ao administrador, garantindo que a plataforma esteja
+              sempre <span>atualizada</span>
+            </h2>
+            <p class="pedido">
+              Teremos essa opção na aba <span>'Pedido'</span>
+            </p>
+            <div class="video">Vídeo</div>
+            <button id="bora" class="botao">Bora?</button>
+          </div>
+        </div>
+        <div class="pontos">
+          <div class="primeiro-ponto ativa"></div>
+          <div class="segundo-ponto"></div>
+          <div class="terceiro-ponto"></div>
+        </div>
+      </div>
+    </section>
+    <script src="js/tela-inicial.js"></script>
+    <script src="js/script.js"></script>
+    <script></script>
+  </body>
+</html>

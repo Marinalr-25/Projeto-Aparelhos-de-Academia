@@ -1,0 +1,44 @@
+@media all and (max-width: 41.25em) {
+  .tela-inicial {
+    & .box-inicial {
+      & .primeira-tela {
+        justify-content: center;
+      }
+      & .segunda-tela {
+        gap: 1.5rem;
+      }
+      & .pontos {
+        & div {
+          width: 0.9rem;
+          height: 0.9rem;
+        }
+        & .primeiro-ponto {
+          transform: translate(-25px, 7px);
+        }
+        & .segundo-ponto {
+          transform: translate(0, 0);
+        }
+        & .terceiro-ponto {
+          transform: translate(25px, -7px);
+        }
+      }
+    }
+
+    .topo {
+      & .h2-muitoBem {
+        text-align: center;
+        & #nome-saudacao {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .body.costas {
+    background-size: cover;
+
+    & .mainBody {
+      margin-top: 5rem;
+    }
+  }
+}

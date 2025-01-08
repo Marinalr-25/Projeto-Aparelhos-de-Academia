@@ -1,0 +1,54 @@
+.pop-up-pedido {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  &.aberto {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    width: 80rem;
+    height: 65rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0);
+    color: white;
+    border-radius: 1.5rem;
+    border: solid 2px var(--cor-fundo);
+
+    & .container {
+      display: flex;
+      flex-direction: column;
+
+      & .title {
+        & h2 {
+          font-size: 2.4rem;
+          color: var(--cor-texto);
+          text-align: center;
+          line-height: 1.2;
+        }
+        & p {
+          font-size: 1.6rem;
+        }
+      }
+
+      & .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25rem;
+      }
+    }
+  }
+}
+
+/* texto informando adicionar o aparelho para melhorias do site
+nome da pessoa
+nome do aparelho
+treino faz parte de (ombro, costas...)
+descricao do aparelho
+nome do exercicio feito com o aparelho
+foto do aparelho(opcional)
+comentário
+email ou telefone de contato */
