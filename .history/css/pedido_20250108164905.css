@@ -147,12 +147,7 @@
   .pop-up-pedido {
     &.aberto {
       & .container {
-        & .box {
-          flex-direction: column;
-          & .column {
-            width: 100%;
-          }
-        }
+        width: 50vw;
       }
     }
   }

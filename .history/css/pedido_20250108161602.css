@@ -4,27 +4,25 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
   &.aberto {
     display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
-    inset: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 999;
+    width: 80rem;
+    height: max-content;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0);
+    color: white;
+    border-radius: 1.5rem;
+    border: solid 2px var(--cor-fundo);
 
     & .container {
-      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       gap: 2.5rem;
-      width: 80rem;
-      height: max-content;
-      padding: 2rem;
-      background-color: rgba(0, 0, 0);
-      color: white;
-      border-radius: 1.5rem;
-      border: solid 2px var(--cor-fundo);
+      position: relative;
 
       & svg {
         width: 4rem;
@@ -32,6 +30,7 @@
         position: absolute;
         right: 0;
         top: 0;
+        transform: translate(45%, -45%);
         color: var(--cor-texto);
       }
 
@@ -45,13 +44,6 @@
         }
         & p {
           font-size: 1.6rem;
-          font-weight: 400;
-          text-wrap: pretty;
-
-          & span {
-            color: var(--cor-fundo);
-            font-weight: 600;
-          }
         }
       }
 
@@ -136,9 +128,7 @@
 @media all and (max-width: 61.87em) {
   .pop-up-pedido {
     &.aberto {
-      & .container {
-        width: 80vw;
-      }
+      width: 65rem;
     }
   }
 }
@@ -146,11 +136,11 @@
 @media all and (max-width: 41.25em) {
   .pop-up-pedido {
     &.aberto {
+      width: 78vw;
       & .container {
-        & .box {
-          flex-direction: column;
-          & .column {
-            width: 100%;
+        & .formulario {
+          & .box {
+            flex-direction: column;
           }
         }
       }

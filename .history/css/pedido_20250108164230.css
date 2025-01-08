@@ -46,7 +46,6 @@
         & p {
           font-size: 1.6rem;
           font-weight: 400;
-          text-wrap: pretty;
 
           & span {
             color: var(--cor-fundo);
@@ -127,31 +126,6 @@
           color: var(--cor-fundo);
           border: solid 3px var(--cor-fundo);
           transform: scale(1.02);
-        }
-      }
-    }
-  }
-}
-
-@media all and (max-width: 61.87em) {
-  .pop-up-pedido {
-    &.aberto {
-      & .container {
-        width: 80vw;
-      }
-    }
-  }
-}
-
-@media all and (max-width: 41.25em) {
-  .pop-up-pedido {
-    &.aberto {
-      & .container {
-        & .box {
-          flex-direction: column;
-          & .column {
-            width: 100%;
-          }
         }
       }
     }

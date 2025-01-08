@@ -149,9 +149,6 @@
       & .container {
         & .box {
           flex-direction: column;
-          & .column {
-            width: 100%;
-          }
         }
       }
     }

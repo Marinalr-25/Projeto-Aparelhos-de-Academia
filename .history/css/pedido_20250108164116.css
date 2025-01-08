@@ -13,7 +13,6 @@
     z-index: 999;
 
     & .container {
-      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -32,6 +31,7 @@
         position: absolute;
         right: 0;
         top: 0;
+        transform: translate(45%, -45%);
         color: var(--cor-texto);
       }
 
@@ -46,7 +46,6 @@
         & p {
           font-size: 1.6rem;
           font-weight: 400;
-          text-wrap: pretty;
 
           & span {
             color: var(--cor-fundo);
@@ -136,9 +135,7 @@
 @media all and (max-width: 61.87em) {
   .pop-up-pedido {
     &.aberto {
-      & .container {
-        width: 80vw;
-      }
+      width: 65rem;
     }
   }
 }
@@ -146,11 +143,14 @@
 @media all and (max-width: 41.25em) {
   .pop-up-pedido {
     &.aberto {
+      width: 78vw;
       & .container {
-        & .box {
-          flex-direction: column;
+        & .formulario {
+          & .box {
+            flex-direction: column;
+          }
           & .column {
-            width: 100%;
+            width: 70vw;
           }
         }
       }

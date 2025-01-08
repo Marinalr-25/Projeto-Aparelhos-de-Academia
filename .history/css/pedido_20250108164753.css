@@ -143,21 +143,6 @@
   }
 }
 
-@media all and (max-width: 41.25em) {
-  .pop-up-pedido {
-    &.aberto {
-      & .container {
-        & .box {
-          flex-direction: column;
-          & .column {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-}
-
 /* texto informando adicionar o aparelho para melhorias do site
 nome da pessoa
 nome do aparelho

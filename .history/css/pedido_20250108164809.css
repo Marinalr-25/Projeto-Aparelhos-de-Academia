@@ -42,6 +42,7 @@
           color: var(--cor-texto);
           text-align: center;
           line-height: 1.2;
+          text-wrap: balance;
         }
         & p {
           font-size: 1.6rem;
@@ -138,21 +139,6 @@
     &.aberto {
       & .container {
         width: 80vw;
-      }
-    }
-  }
-}
-
-@media all and (max-width: 41.25em) {
-  .pop-up-pedido {
-    &.aberto {
-      & .container {
-        & .box {
-          flex-direction: column;
-          & .column {
-            width: 100%;
-          }
-        }
       }
     }
   }
