@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="css/pedido.css" />
     <link
       rel="stylesheet"
-      href="css/media-990.css"
-      media="(max-width: 990px)"
-    />
-    <link
-      rel="stylesheet"
       href="css/media-767.css"
       media="(max-width: 767px)"
     />
@@ -39,7 +34,7 @@
           <li class="lista-cabecalho" id="home">
             <a href="telaPrincipal.html">Home</a>
           </li>
-          <li class="lista-cabecalho pedidoClasse" id="pedido">
+          <li class="lista-cabecalho" id="pedido">
             <a href="#">Pedido</a>
           </li>
           <li class="lista-cabecalho" id="tema"><a href="#">Tema</a></li>
@@ -138,10 +133,9 @@
           </p>
         </div>
         <form
-          class="formulario"
+          class="formulario aberto"
           action="https://formsubmit.co/marinalrob@gmail.com"
           method="POST"
-          enctype="multipart/form-data"
         >
           <input
             type="hidden"
@@ -194,13 +188,7 @@
           </div>
           <div>
             <label class="label" for="foto">Foto do aparelho: (Opcional)</label>
-            <input
-              class="campo"
-              type="file"
-              name="foto"
-              id="foto"
-              accept="image/png, image/jpeg"
-            />
+            <input class="campo" type="file" name="foto" id="foto" />
           </div>
           <div>
             <label class="label" for="comentario">Comentário:</label>
@@ -224,22 +212,6 @@
           </div>
           <button class="buttomForm" type="submit">Enviar!</button>
         </form>
-        <div>
-          <svg
-            class="pedidoClasse"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-          >
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="32"
-              d="M368 368L144 144M368 144L144 368"
-            ></path>
-          </svg>
-        </div>
       </div>
     </section>
     <script src="js/script.js"></script>

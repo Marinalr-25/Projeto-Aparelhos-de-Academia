@@ -1,5 +1,5 @@
 @media all and (max-width: 61.87em) {
-  .tela-principal {
+  .telaPrincipal {
     & .container {
       grid-template-columns: repeat(2, 1fr);
     }

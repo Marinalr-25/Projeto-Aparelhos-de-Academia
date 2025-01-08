@@ -379,21 +379,15 @@
           <input type="hidden" name="_template" value="table" />
           <div>
             <label class="label" for="name">Nome:</label>
-            <input class="campo" required type="text" name="name" id="name" />
+            <input required type="text" name="name" id="name" />
           </div>
           <div>
             <label class="label" for="nameAparelho">Nome do aparelho:</label>
-            <input
-              class="campo"
-              required
-              type="text"
-              name="nameAparelho"
-              id="nameAparelho"
-            />
+            <input required type="text" name="nameAparelho" id="nameAparelho" />
           </div>
           <div>
             <label class="label" for="treino">Treino faz parte de:</label>
-            <select class="campo" required name="treino" id="treino">
+            <select required name="treino" id="treino">
               <option value="" disabled selected>Selecione um treino:</option>
               <option value="perna">Perna</option>
               <option value="braço">Braço</option>
@@ -406,7 +400,7 @@
           <div>
             <label class="label" for="descricao">Descrição:</label>
             <textarea
-              class="textarea campo"
+              class="textarea"
               name="descricao"
               id="descricao"
               placeholder="Descrição do aparelho"
@@ -416,22 +410,16 @@
             <label class="label" for="exercicio"
               >Nome do exercício feito com o aparelho: (Opcional)</label
             >
-            <input class="campo" type="text" name="exercicio" id="exercicio" />
+            <input type="text" name="exercicio" id="exercicio" />
           </div>
           <div>
             <label class="label" for="foto">Foto do aparelho: (Opcional)</label>
-            <input
-              class="campo"
-              type="file"
-              name="foto"
-              id="foto"
-              accept="image/png, image/jpeg"
-            />
+            <input type="file" name="foto" id="foto" />
           </div>
           <div>
             <label class="label" for="comentario">Comentário:</label>
             <textarea
-              class="textarea campo"
+              class="textarea"
               name="comentario"
               id="comentario"
               placeholder="Comentário"
@@ -440,32 +428,26 @@
 
           <div>
             <label class="label" for="email">Email:</label>
-            <input
-              class="campo"
-              required
-              type="email"
-              name="email"
-              id="email"
-            />
+            <input required type="email" name="email" id="email" />
           </div>
           <button class="buttomForm" type="submit">Enviar!</button>
+          <div>
+            <svg
+              class="pedidoClasse"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M368 368L144 144M368 144L144 368"
+              ></path>
+            </svg>
+          </div>
         </form>
-        <div>
-          <svg
-            class="pedidoClasse"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-          >
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="32"
-              d="M368 368L144 144M368 144L144 368"
-            ></path>
-          </svg>
-        </div>
       </div>
     </section>
 

@@ -7,10 +7,10 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -45%);
+    transform: translate(-50%, -50%);
     opacity: 1;
-    max-width: 80rem;
-    height: max-content;
+    width: 80rem;
+    height: 77rem;
     padding: 2rem;
     background-color: rgba(0, 0, 0);
     color: white;
@@ -21,17 +21,6 @@
       display: flex;
       flex-direction: column;
       gap: 2.5rem;
-      position: relative;
-
-      & svg {
-        width: 4rem;
-        height: 4rem;
-        position: absolute;
-        right: 0;
-        top: 0;
-        transform: translate(45%, -45%);
-        color: var(--cor-texto);
-      }
 
       & .title {
         & h2 {
@@ -54,18 +43,16 @@
         & div {
           display: flex;
           flex-direction: column;
-          & input {
-            &:focus,
-            &:focus-visible {
-              border: none;
-              border: 1px solid var(--cor-fundo);
-            }
-          }
+
           & .campo {
             background-color: var(--cor-texto);
             color: black;
             padding: 0.5rem;
-            border-radius: 1.5rem;
+
+            &:focus,
+            &:focus-visible {
+              border: 1px solid var(--cor-fundo);
+            }
           }
         }
 
@@ -121,8 +108,3 @@ nome do exercicio feito com o aparelho
 foto do aparelho(opcional)
 comentário
 email ou telefone de contato */
-
-/* adicionado SVG de fechar no formulario
-  adicionado funcao de enviar foto no formulario
-  cliado logica de abrir e fechar o popUp Pedido
-  arrumado grid da tela principal */

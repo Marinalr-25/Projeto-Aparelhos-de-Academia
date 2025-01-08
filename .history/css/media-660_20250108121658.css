@@ -48,6 +48,7 @@
   .pop-up-pedido {
     &.aberto {
       width: 45rem;
+      height: 80rem;
     }
   }
 }

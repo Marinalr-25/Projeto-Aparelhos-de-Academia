@@ -98,7 +98,7 @@ input {
 main {
   height: 100%;
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 7rem;
 
   &.sobe {
     transform: translateY(-100rem);

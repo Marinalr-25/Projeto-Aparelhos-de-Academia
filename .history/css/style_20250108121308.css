@@ -26,6 +26,7 @@ body {
   background-color: var(--primaria);
   opacity: 1;
   transition: opacity 0.5s ease;
+  overflow: hidden;
 }
 
 textarea,

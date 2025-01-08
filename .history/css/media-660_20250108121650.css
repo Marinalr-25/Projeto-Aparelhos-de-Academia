@@ -35,7 +35,7 @@
   }
 
   .tela-principal {
-    margin-top: 4rem;
+    margin-top: 5rem;
     & .container {
       grid-template-columns: 1fr;
     }
@@ -48,6 +48,7 @@
   .pop-up-pedido {
     &.aberto {
       width: 45rem;
+      height: 80rem;
     }
   }
 }

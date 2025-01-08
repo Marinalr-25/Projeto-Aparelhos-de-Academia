@@ -1,0 +1,21 @@
+@media all and (max-width: 36.25em) {
+  .tela-inicial {
+    & .box-inicial {
+      height: 60rem;
+      & .pontos {
+        & div {
+          width: 0.9rem;
+        }
+        & .primeiro-ponto {
+          transform: translate(-25px, -3px);
+        }
+        & .segundo-ponto {
+          transform: translate(0, -10px);
+        }
+        & .terceiro-ponto {
+          transform: translate(25px, -17px);
+        }
+      }
+    }
+  }
+}

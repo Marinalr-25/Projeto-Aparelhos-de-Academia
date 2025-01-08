@@ -65,7 +65,7 @@
             background-color: var(--cor-texto);
             color: black;
             padding: 0.5rem;
-            border-radius: 1.5rem;
+            border-radius: 1rem;
           }
         }
 
@@ -122,7 +122,7 @@ foto do aparelho(opcional)
 comentário
 email ou telefone de contato */
 
-/* adicionado SVG de fechar no formulario
-  adicionado funcao de enviar foto no formulario
+/* ADICIONADO SVG FECHAR nonformulario
+  adicionado funcao de enviar foto no .formulario
   cliado logica de abrir e fechar o popUp Pedido
   arrumado grid da tela principal */

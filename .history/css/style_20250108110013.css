@@ -98,7 +98,7 @@ input {
 main {
   height: 100%;
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 10rem;
 
   &.sobe {
     transform: translateY(-100rem);
@@ -338,7 +338,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 3.12rem;
-  align-items: center;
   font-size: 9.6rem;
   transform: translateY(0px);
   transition: transform 0.8s ease;
@@ -348,13 +347,12 @@ main {
   }
 
   .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 120rem;
-    justify-content: center;
-    align-items: center;
+    display: flex;
     gap: 2rem;
-    padding: 2.5rem;
+    margin-top: 3rem;
+    justify-content: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
 
     & .box {
       width: 30rem;

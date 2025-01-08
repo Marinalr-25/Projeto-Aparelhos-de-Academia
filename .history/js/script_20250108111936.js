@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const telaPrincipal = document.querySelector('.tela-principal');
   const menu = document.querySelector('.nav-icone--menu');
   const fechar = document.querySelector('.nav-icone--fechar');
-  const iconeFecharPedido = document.querySelector('.icone-fechar');
+  const fecharPedido = document.querySelector('.icone-fechar').parentNode;
   const body = document.querySelector('body');
   const mainBody = document.querySelector('.mainBody ');
   const logo = document.querySelector('.logo');
@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const pedido = document.getElementById('pedido');
   const tema = document.getElementById('tema');
   const links = document.querySelectorAll('.box a');
-  const pedidoClasse = document.querySelectorAll('.pedidoClasse');
   const popUpPedido = document.querySelector('.pop-up-pedido');
 
   window.addEventListener('load', function () {
@@ -72,12 +71,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 300);
   });
 
-  pedidoClasse.forEach((pedido) => {
-    pedido.addEventListener('click', function () {
-      popUpPedido.classList.toggle('aberto');
-      fecharNav();
-    });
-  });
+  pedido.onclick = function () {
+    popUpPedido.classList.add('aberto');
+    popUpPedido.style.display = 'flex;';
+  };
+
+  fecharPedido.onclick = function () {
+    popUpPedido.classList.remove('aberto');
+    popUpPedido.style.display = 'none;';
+  };
 
   fechar.addEventListener('click', function () {
     fecharNav();
@@ -94,6 +96,5 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   voltarHome(logo);
-
-  console.log(pedidoClasse);
+  console.log(fecharPedido);
 });

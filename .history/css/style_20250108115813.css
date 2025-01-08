@@ -98,7 +98,7 @@ input {
 main {
   height: 100%;
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 10rem;
 
   &.sobe {
     transform: translateY(-100rem);
@@ -349,12 +349,14 @@ main {
 
   .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 120rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-rows: auto;
+    max-width: 100rem;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 2.5rem;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
 
     & .box {
       width: 30rem;

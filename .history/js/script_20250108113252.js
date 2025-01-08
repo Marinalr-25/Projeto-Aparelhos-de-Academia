@@ -3,16 +3,16 @@ document.addEventListener('DOMContentLoaded', function () {
   const telaPrincipal = document.querySelector('.tela-principal');
   const menu = document.querySelector('.nav-icone--menu');
   const fechar = document.querySelector('.nav-icone--fechar');
-  const iconeFecharPedido = document.querySelector('.icone-fechar');
+  const fecharPedido = document.querySelector('.icone-fechar');
   const body = document.querySelector('body');
   const mainBody = document.querySelector('.mainBody ');
   const logo = document.querySelector('.logo');
   const nav = document.querySelector('nav');
   const home = document.getElementById('home');
   const pedido = document.getElementById('pedido');
+  const pedidos = document.querySelectorAll('.pedidoClasse');
   const tema = document.getElementById('tema');
   const links = document.querySelectorAll('.box a');
-  const pedidoClasse = document.querySelectorAll('.pedidoClasse');
   const popUpPedido = document.querySelector('.pop-up-pedido');
 
   window.addEventListener('load', function () {
@@ -72,13 +72,26 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 300);
   });
 
-  pedidoClasse.forEach((pedido) => {
+  // pedido.onclick = function () {
+  //   popUpPedido.classList.toggle('aberto');
+  //   popUpPedido.style.display = 'flex;';
+  // };
+
+  pedidos.forEach((pedido) => {
     pedido.addEventListener('click', function () {
-      popUpPedido.classList.toggle('aberto');
-      fecharNav();
+      if (popUpPedido.classList.contains('aberto')) {
+        popUpPedido.classList.remove('aberto');
+        popUpPedido.style.display = 'none';
+      } else {
+        popUpPedido.classList.add('aberto');
+        popUpPedido.style.display = 'flex';
+      }
     });
   });
 
+  fecharPedido.addEventListener('click', function () {
+    closePedido();
+  });
   fechar.addEventListener('click', function () {
     fecharNav();
   });
@@ -95,5 +108,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
   voltarHome(logo);
 
-  console.log(pedidoClasse);
+  console.log(pedidos);
 });

@@ -1,4 +1,7 @@
 @media all and (max-width: 41.25em) {
+  main {
+    margin-top: 3rem;
+  }
   .tela-inicial {
     & .box-inicial {
       & .primeira-tela {
@@ -35,7 +38,6 @@
   }
 
   .tela-principal {
-    margin-top: 4rem;
     & .container {
       grid-template-columns: 1fr;
     }
@@ -48,6 +50,7 @@
   .pop-up-pedido {
     &.aberto {
       width: 45rem;
+      height: 80rem;
     }
   }
 }

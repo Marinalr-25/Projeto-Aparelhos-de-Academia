@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 100);
   });
 
+  pedidoClasse.forEach((pedido) => {
+    pedido.addEventListener('click', function () {
+      popUpPedido.classList.toggle('aberto');
+    });
+  });
+
   function animacao(header, main) {
     header.classList.remove('sobe');
     main.classList.remove('move-bottom');
@@ -70,13 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
         nav.classList.add('aberto');
       }, 300);
     }, 300);
-  });
-
-  pedidoClasse.forEach((pedido) => {
-    pedido.addEventListener('click', function () {
-      popUpPedido.classList.toggle('aberto');
-      fecharNav();
-    });
   });
 
   fechar.addEventListener('click', function () {

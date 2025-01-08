@@ -98,7 +98,7 @@ input {
 main {
   height: 100%;
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 10rem;
 
   &.sobe {
     transform: translateY(-100rem);
@@ -354,7 +354,8 @@ main {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 2.5rem;
+    margin-top: 3rem;
+    padding: 2rem;
 
     & .box {
       width: 30rem;

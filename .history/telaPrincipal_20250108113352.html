@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="css/pedido.css" />
     <link
       rel="stylesheet"
-      href="css/media-990.css"
-      media="(max-width: 990px)"
-    />
-    <link
-      rel="stylesheet"
       href="css/media-767.css"
       media="(max-width: 767px)"
     />
@@ -39,7 +34,7 @@
           <li class="lista-cabecalho" id="home">
             <a href="telaPrincipal.html">Home</a>
           </li>
-          <li class="lista-cabecalho pedidoClasse" id="pedido">
+          <li class="lista-cabecalho" class="pop-up-pedido" id="pedido">
             <a href="#">Pedido</a>
           </li>
           <li class="lista-cabecalho" id="tema"><a href="#">Tema</a></li>
@@ -141,7 +136,6 @@
           class="formulario"
           action="https://formsubmit.co/marinalrob@gmail.com"
           method="POST"
-          enctype="multipart/form-data"
         >
           <input
             type="hidden"
@@ -194,13 +188,7 @@
           </div>
           <div>
             <label class="label" for="foto">Foto do aparelho: (Opcional)</label>
-            <input
-              class="campo"
-              type="file"
-              name="foto"
-              id="foto"
-              accept="image/png, image/jpeg"
-            />
+            <input class="campo" type="file" name="foto" id="foto" />
           </div>
           <div>
             <label class="label" for="comentario">Comentário:</label>
