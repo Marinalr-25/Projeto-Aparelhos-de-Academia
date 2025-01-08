@@ -71,12 +71,6 @@
             font-size: 1.6rem;
             padding-bottom: 0.6rem;
           }
-
-          & .textarea {
-            height: 7rem;
-            padding: 0.5rem;
-            border: 2px solid var(--cor-fundo);
-          }
         }
         & .campo {
           background-color: var(--cor-texto);
@@ -100,6 +94,12 @@
             color: rgba(0, 0, 0, 0.5);
           }
         }
+      }
+
+      & .textarea {
+        height: 7rem;
+        padding: 0.5rem;
+        border: 2px solid var(--cor-fundo);
       }
 
       & .buttomForm {

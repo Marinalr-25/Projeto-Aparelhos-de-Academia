@@ -66,40 +66,25 @@
           &.descricao {
             width: 100%;
           }
-
-          & .label {
-            font-size: 1.6rem;
-            padding-bottom: 0.6rem;
-          }
-
-          & .textarea {
-            height: 7rem;
-            padding: 0.5rem;
-            border: 2px solid var(--cor-fundo);
-          }
         }
         & .campo {
           background-color: var(--cor-texto);
           color: black;
           padding: 0.5rem;
-          border-radius: 1rem;
+          border-radius: 1.5rem;
           border: 2px solid var(--cor-fundo);
-
-          &::file-selector-button {
-            background-color: var(--cor-fundo);
-            color: white;
-            border: none;
-            height: 3rem;
-            padding: 2rem;
-            border-radius: 0.5rem;
-            padding: 0.1rem;
-            cursor: pointer;
-          }
-
-          &::placeholder {
-            color: rgba(0, 0, 0, 0.5);
-          }
         }
+      }
+
+      & .label {
+        font-size: 1.6rem;
+        padding-bottom: 0.6rem;
+      }
+
+      & .textarea {
+        height: 5rem;
+        padding: 0.5rem;
+        border: 2px solid var(--cor-fundo);
       }
 
       & .buttomForm {
@@ -131,6 +116,11 @@
       width: 65rem;
     }
   }
+}
+
+.file-upload {
+  position: relative;
+  display: inline-block;
 }
 
 /* texto informando adicionar o aparelho para melhorias do site

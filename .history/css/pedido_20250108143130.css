@@ -1,0 +1,123 @@
+.pop-up-pedido {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  &.aberto {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    opacity: 1;
+    max-width: 80rem;
+    height: max-content;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0);
+    color: white;
+    border-radius: 1.5rem;
+    border: solid 2px var(--cor-fundo);
+
+    & .container {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      position: relative;
+
+      & svg {
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(45%, -45%);
+        color: var(--cor-texto);
+      }
+
+      & .title {
+        & h2 {
+          font-size: 2.4rem;
+          padding-bottom: 1.5rem;
+          color: var(--cor-texto);
+          text-align: center;
+          line-height: 1.2;
+        }
+        & p {
+          font-size: 1.6rem;
+        }
+      }
+
+      & .formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        width: 100%;
+          & input,
+          select,
+          textarea {
+            width: 25rem;
+            &:focus,
+            &:focus-visible {
+              border: none;
+              border: 1px solid var(--cor-fundo);
+            }
+          }
+          & .campo {
+            background-color: var(--cor-texto);
+            color: black;
+            padding: 0.5rem;
+            border-radius: 1.5rem;
+          }
+        }
+
+        & .label {
+          font-size: 1.6rem;
+          padding-bottom: 0.6rem;
+        }
+
+        & .textarea {
+          height: 5rem;
+          padding: 0.5rem;
+          border: 1px solid var(--cor-fundo);
+        }
+
+        & .buttomForm {
+          background-color: var(--cor-fundo);
+          color: var(--cor-texto);
+          padding: 1rem 2rem;
+          border: none;
+          outline: none;
+          border-radius: 5rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          border-right: solid 4px var(--cor-texto);
+          border-bottom: solid 4px var(--cor-texto);
+          transition: all 0.3s;
+          &:hover {
+            background-color: var(--cor-texto);
+            color: var(--cor-fundo);
+            border: solid 3px var(--cor-fundo);
+            transform: scale(1.02);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 61.87em) {
+  .pop-up-pedido {
+    &.aberto {
+      width: 65rem;
+    }
+  }
+}
+
+/* texto informando adicionar o aparelho para melhorias do site
+nome da pessoa
+nome do aparelho
+treino faz parte de (ombro, costas...)
+descricao do aparelho
+nome do exercicio feito com o aparelho
+foto do aparelho(opcional)
+comentário
+email ou telefone de contato */

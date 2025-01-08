@@ -20,7 +20,6 @@
     & .container {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       gap: 2.5rem;
       position: relative;
 
@@ -56,50 +55,24 @@
         & .box {
           display: flex;
           gap: 1rem;
-          justify-content: space-around;
-        }
-        & .column {
-          display: flex;
-          flex-direction: column;
-          width: 45%;
-
-          &.descricao {
-            width: 100%;
-          }
-
-          & .label {
-            font-size: 1.6rem;
-            padding-bottom: 0.6rem;
-          }
-
-          & .textarea {
-            height: 7rem;
-            padding: 0.5rem;
-            border: 2px solid var(--cor-fundo);
-          }
         }
         & .campo {
           background-color: var(--cor-texto);
           color: black;
           padding: 0.5rem;
-          border-radius: 1rem;
-          border: 2px solid var(--cor-fundo);
-
-          &::file-selector-button {
-            background-color: var(--cor-fundo);
-            color: white;
-            border: none;
-            height: 3rem;
-            padding: 2rem;
-            border-radius: 0.5rem;
-            padding: 0.1rem;
-            cursor: pointer;
-          }
-
-          &::placeholder {
-            color: rgba(0, 0, 0, 0.5);
-          }
+          border-radius: 1.5rem;
         }
+      }
+
+      & .label {
+        font-size: 1.6rem;
+        padding-bottom: 0.6rem;
+      }
+
+      & .textarea {
+        height: 5rem;
+        padding: 0.5rem;
+        border: 1px solid var(--cor-fundo);
       }
 
       & .buttomForm {

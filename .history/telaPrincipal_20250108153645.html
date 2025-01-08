@@ -197,14 +197,20 @@
           <div class="box">
             <div class="column">
               <label class="label" for="nameEx">Nome do exercício</label>
-              <input class="campo" type="text" name="nameEx" id="nameEx" />
+              <input
+                class="campo"
+                required
+                type="text"
+                name="nameEx"
+                id="nameEx"
+              />
             </div>
             <div class="column">
               <label class="label" for="file-input"
                 >Foto do aparelho (Opcional)</label
               >
               <input
-                class="campo"
+                class="campo file"
                 type="file"
                 name="foto"
                 id="file-input"
@@ -219,7 +225,7 @@
               class="textarea campo"
               name="descricao"
               id="descricao"
-              placeholder="Descreva com detalhes informações que podem auxiliar"
+              placeholder="Descrição do aparelho"
             ></textarea>
           </div>
 

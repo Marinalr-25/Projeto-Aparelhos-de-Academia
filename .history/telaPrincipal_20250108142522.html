@@ -151,14 +151,13 @@
           <input type="hidden" name="_subject" value="Site Academia!" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="table" />
-
-          <div class="box">
-            <div class="column">
-              <label class="label" for="name">Nome</label>
+          <div>
+            <div>
+              <label class="label" for="name">Nome:</label>
               <input class="campo" required type="text" name="name" id="name" />
             </div>
-            <div class="column">
-              <label class="label" for="nameAparelho">Nome do aparelho</label>
+            <div>
+              <label class="label" for="nameAparelho">Nome do aparelho:</label>
               <input
                 class="campo"
                 required
@@ -168,61 +167,55 @@
               />
             </div>
           </div>
-
-          <div class="box">
-            <div class="column">
-              <label class="label" for="email">Email</label>
-              <input
-                class="campo"
-                required
-                type="email"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div class="column">
-              <label class="label" for="treino">Treino faz parte de</label>
-              <select class="campo" required name="treino" id="treino">
-                <option value="" disabled selected>Selecione um treino</option>
-                <option value="perna">Perna</option>
-                <option value="braço">Braço</option>
-                <option value="ombro">Ombro</option>
-                <option value="abdomen">Abdômen</option>
-                <option value="costas">Costas</option>
-                <option value="peito">Peito</option>
-              </select>
-            </div>
+          <div>
+            <label class="label" for="treino">Treino faz parte de:</label>
+            <select class="campo" required name="treino" id="treino">
+              <option value="" disabled selected>Selecione um treino:</option>
+              <option value="perna">Perna</option>
+              <option value="braço">Braço</option>
+              <option value="ombro">Ombro</option>
+              <option value="abdomen">Abdômen</option>
+              <option value="costas">Costas</option>
+              <option value="peito">Peito</option>
+            </select>
           </div>
-
-          <div class="box">
-            <div class="column">
-              <label class="label" for="nameEx">Nome do exercício</label>
-              <input class="campo" type="text" name="nameEx" id="nameEx" />
-            </div>
-            <div class="column">
-              <label class="label" for="file-input"
-                >Foto do aparelho (Opcional)</label
-              >
-              <input
-                class="campo"
-                type="file"
-                name="foto"
-                id="file-input"
-                accept="image/*"
-              />
-            </div>
+          <div>
+            <label class="label" for="exercicio"
+              >Nome do exercício feito com o aparelho: (Opcional)</label
+            >
+            <input class="campo" type="text" name="exercicio" id="exercicio" />
           </div>
-
-          <div class="column descricao">
-            <label class="label" for="descricao">Descrição</label>
+          <div>
+            <label class="label" for="descricao">Descrição/Comentário:</label>
             <textarea
               class="textarea campo"
               name="descricao"
               id="descricao"
-              placeholder="Descreva com detalhes informações que podem auxiliar"
+              placeholder="Descrição do aparelho / Comentário"
             ></textarea>
           </div>
 
+          <div>
+            <label class="label" for="foto">Foto do aparelho: (Opcional)</label>
+            <input
+              class="campo"
+              type="file"
+              name="foto"
+              id="foto"
+              accept="image/png, image/jpeg"
+            />
+          </div>
+
+          <div>
+            <label class="label" for="email">Email:</label>
+            <input
+              class="campo"
+              required
+              type="email"
+              name="email"
+              id="email"
+            />
+          </div>
           <button class="buttomForm" type="submit">Enviar!</button>
         </form>
         <div>
