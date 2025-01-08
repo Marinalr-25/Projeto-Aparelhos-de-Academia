@@ -147,7 +147,7 @@
   .pop-up-pedido {
     &.aberto {
       & .container {
-        height: 80svh;
+        height: ;
         & .box {
           flex-direction: column;
           & .column {
