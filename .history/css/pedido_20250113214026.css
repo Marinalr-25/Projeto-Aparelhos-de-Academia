@@ -149,7 +149,6 @@
       & .container {
         width: 100svw;
         height: 100svh;
-        justify-content: center;
         & .box {
           flex-direction: column;
           & .column {

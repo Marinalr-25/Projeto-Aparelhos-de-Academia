@@ -1,3 +1,10 @@
+:root {
+  --caixaFundo: #121212;
+  --caixaTitulo: #ffffff;
+  --caixaInput: #1e1e1e;
+  --caixaArquivo: #252525;
+}
+
 .pop-up-pedido {
   display: none;
   opacity: 0;
@@ -93,7 +100,7 @@
 
           &::file-selector-button {
             background-color: var(--caixaInput);
-            color: var(--caixaTitulo);
+            color: white;
             border: none;
             height: 3rem;
             padding: 2rem;
@@ -147,9 +154,7 @@
   .pop-up-pedido {
     &.aberto {
       & .container {
-        width: 100svw;
-        height: 100svh;
-        justify-content: center;
+        height: 90svh;
         & .box {
           flex-direction: column;
           & .column {

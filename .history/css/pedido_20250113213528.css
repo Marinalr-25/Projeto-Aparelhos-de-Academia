@@ -1,3 +1,10 @@
+:root {
+  --caixaFundo: #101010;
+  --caixaTitulo: #cccccc;
+  --caixaInput: #1a1a1a;
+  --caixaArquivo: #222222;
+}
+
 .pop-up-pedido {
   display: none;
   opacity: 0;
@@ -147,9 +154,7 @@
   .pop-up-pedido {
     &.aberto {
       & .container {
-        width: 100svw;
-        height: 100svh;
-        justify-content: center;
+        height: 90svh;
         & .box {
           flex-direction: column;
           & .column {

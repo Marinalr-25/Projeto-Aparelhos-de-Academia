@@ -1,3 +1,10 @@
+:root {
+  --caixaFundo: #121212;
+  --caixaTitulo: #ffffff;
+  --caixaInput: #1e1e1e;
+  --caixaArquivo: #252525;
+}
+
 .pop-up-pedido {
   display: none;
   opacity: 0;
@@ -24,7 +31,7 @@
       background-color: var(--caixaFundo);
       color: var(--caixaTitulo);
       border-radius: 1.5rem;
-      border: solid 2px var(--cor-fundo);
+      /* border: solid 2px var(--cor-fundo); */
 
       & svg {
         width: 4rem;
@@ -86,14 +93,14 @@
           }
         }
         & .campo {
-          background-color: var(--caixaInput);
-          color: var(--caixaTitulo);
+          background-color: #6d6d7f;
+          color: black;
           padding: 0.5rem;
           border-radius: 1rem;
 
           &::file-selector-button {
-            background-color: var(--caixaInput);
-            color: var(--caixaTitulo);
+            background-color: #5a5c66;
+            color: white;
             border: none;
             height: 3rem;
             padding: 2rem;
@@ -147,9 +154,7 @@
   .pop-up-pedido {
     &.aberto {
       & .container {
-        width: 100svw;
-        height: 100svh;
-        justify-content: center;
+        height: 90svh;
         & .box {
           flex-direction: column;
           & .column {
