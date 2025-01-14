@@ -89,22 +89,7 @@ input {
       list-style: none;
       font-size: 1.8rem;
       & li {
-        position: relative;
-
-        &:hover::after {
-          width: 100%;
-        }
-
-        &::after {
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 0;
-          height: 2px;
-          background-color: var(--cor-texto);
-          transition: width 0.3s ease;
-        }
+        color: #006400;
       }
       & a {
         color: var(--cor-texto);

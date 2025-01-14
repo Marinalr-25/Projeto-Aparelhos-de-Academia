@@ -1,5 +1,6 @@
 :root {
-  --primaria: #1e2021;
+  --cor-fundo: #006400;
+  --cor-texto: #00c957;
 }
 
 * {
@@ -14,7 +15,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--primaria);
+  background-color: #373b3c;
   color: #f1f1f1;
   display: flex;
   flex-direction: column;
@@ -22,7 +23,6 @@ body {
   align-items: center;
   gap: 2rem;
   height: 100svh;
-  padding: 2rem;
 }
 
 .h1 {

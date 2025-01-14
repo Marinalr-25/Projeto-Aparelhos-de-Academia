@@ -1,0 +1,185 @@
+@media all and (max-width: 48em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .tela-inicial {
+    & .box-inicial {
+      & .segunda-tela {
+        & .aparelhos {
+          width: 15rem;
+          &.esquerda {
+            top: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .body {
+    .header {
+      nav {
+        display: none;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 0.3s ease;
+
+        &.aberto {
+          display: flex;
+          opacity: 1;
+          transform: translateX(0);
+          padding: 1rem;
+
+          &::after {
+            content: '';
+            width: 200%;
+            height: 15rem;
+            transform: rotate(-30deg) translate(-2rem, 4rem);
+            background-color: var(--cor-fundo);
+          }
+          &::before {
+            content: '';
+            width: 200%;
+            height: 15rem;
+            transform: rotate(-30deg) translate(2rem, -9rem);
+            background-color: var(--cor-fundo);
+          }
+        }
+      }
+      & .nav-icones {
+        display: block;
+        max-width: 30%;
+        width: 5rem;
+        height: 5rem;
+        color: var(--cor-texto);
+        z-index: 10001;
+      }
+    }
+    & .nav-icone--fechar {
+      display: none;
+    }
+    &.aberto {
+      opacity: 0.9;
+      & nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        align-items: center;
+        background-color: #f1f1f1;
+        opacity: 0.9;
+        position: fixed;
+        top: 0;
+        width: 12rem;
+        height: 40rem;
+        right: 0;
+        z-index: 1000;
+        overflow: hidden;
+
+        & ul {
+          flex-direction: column;
+          align-items: center;
+          gap: 5rem;
+          & li {
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          & a {
+            color: var(--cor-fundo);
+            font-weight: 500;
+          }
+        }
+      }
+      & .nav-icone--menu {
+        display: block;
+      }
+      & .nav-icone--fechar {
+        display: none;
+        color: var(--cor-fundo);
+      }
+    }
+
+    & .tela-principal {
+      & .container {
+        & .box {
+          &.braco {
+            background-image: url(/imagens/braço.png);
+          }
+
+          &.perna {
+            background-image: url(/imagens/perna.png);
+          }
+
+          &.ombro {
+            background-image: url(/imagens/ombro.png);
+          }
+
+          &.costas {
+            background-image: url(/imagens/costasHDrecortada.png);
+          }
+
+          &.peito {
+            background-image: url(/imagens/peito.png);
+          }
+          &.abdomen {
+            background-image: url(/imagens/abdomen.png);
+          }
+        }
+      }
+    }
+    &.costas {
+      & .mainBody {
+        & .container {
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+          padding-top: 1rem;
+          & .maquinas {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            gap: 2.5rem;
+            width: 40rem;
+            & .img-maquinas {
+              display: block;
+              margin: 0 auto;
+              grid-column: 1;
+              grid-row: 1;
+            }
+
+            & .informacoes {
+              grid-column: 1;
+              grid-row: 2;
+              & .title {
+                font-size: 2rem;
+                line-height: 1;
+              }
+              & .infos {
+                & .h3 {
+                  font-size: 1.8rem;
+                }
+                & .info {
+                  font-size: 1.6rem;
+                }
+              }
+            }
+
+            & .exercicios {
+              width: 100%;
+              gap: 0.5rem;
+              grid-column: 1;
+              grid-row: 3;
+
+              & ul li {
+                font-size: 1.6rem;
+                padding-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
