@@ -21,7 +21,6 @@
       width: 80rem;
       height: 58.3rem;
       padding: 2rem;
-      overflow: hidden;
       background-color: var(--caixaFundo);
       color: var(--caixaTitulo);
       border-radius: 1.5rem;
@@ -150,7 +149,7 @@
         width: 100svw;
         height: 100svh;
         justify-content: center;
-
+        overflow: hidden;
         & .box {
           flex-direction: column;
           & .column {
@@ -160,10 +159,6 @@
       }
     }
   }
-}
-
-body.modal-aberto {
-  overflow: hidden;
 }
 
 /* texto informando adicionar o aparelho para melhorias do site

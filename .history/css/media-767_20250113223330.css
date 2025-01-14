@@ -96,7 +96,6 @@
       }
       & .nav-icone--fechar {
         display: none;
-        color: var(--cor-fundo);
       }
     }
 

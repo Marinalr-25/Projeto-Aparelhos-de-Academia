@@ -1,0 +1,176 @@
+body {
+  overflow: hidden;
+  & .pop-up-pedido {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    &.aberto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      inset: 0;
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+
+      & .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2.5rem;
+        width: 80rem;
+        height: 58.3rem;
+        padding: 2rem;
+        overflow: hidden;
+        background-color: var(--caixaFundo);
+        color: var(--caixaTitulo);
+        border-radius: 1.5rem;
+        border: solid 2px var(--cor-fundo);
+
+        & svg {
+          width: 4rem;
+          height: 4rem;
+          position: absolute;
+          right: 0;
+          top: 0;
+          color: var(--cor-texto);
+        }
+
+        & .title {
+          & h2 {
+            font-size: 2.4rem;
+            padding-bottom: 1.5rem;
+            color: var(--cor-texto);
+            text-align: center;
+            line-height: 1.2;
+          }
+          & p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            text-wrap: pretty;
+
+            & span {
+              color: var(--cor-fundo);
+              font-weight: 600;
+            }
+          }
+        }
+
+        & .formulario {
+          display: flex;
+          flex-direction: column;
+          gap: 1.6rem;
+          width: 100%;
+
+          & .box {
+            display: flex;
+            gap: 1rem;
+            justify-content: space-around;
+          }
+          & .column {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+
+            &.descricao {
+              width: 100%;
+            }
+
+            & .label {
+              font-size: 1.6rem;
+              padding-bottom: 0.6rem;
+            }
+
+            & .textarea {
+              height: 7rem;
+              padding: 0.5rem;
+            }
+          }
+          & .campo {
+            background-color: var(--caixaInput);
+            color: var(--caixaTitulo);
+            padding: 0.5rem;
+            border-radius: 1rem;
+
+            &::file-selector-button {
+              background-color: var(--caixaInput);
+              color: var(--caixaTitulo);
+              border: none;
+              height: 3rem;
+              padding: 2rem;
+              border-radius: 0.5rem;
+              padding: 0.1rem;
+              cursor: pointer;
+            }
+
+            &::placeholder {
+              color: rgba(255, 255, 255, 0.5);
+            }
+          }
+        }
+
+        & .buttomForm {
+          background-color: var(--cor-fundo);
+          color: var(--cor-texto);
+          padding: 1rem 2rem;
+          border: none;
+          outline: none;
+          border-radius: 5rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          border-right: solid 4px var(--cor-texto);
+          border-bottom: solid 4px var(--cor-texto);
+          transition: all 0.3s;
+          &:hover {
+            background-color: var(--cor-texto);
+            color: var(--cor-fundo);
+            border: solid 3px var(--cor-fundo);
+            transform: scale(1.02);
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 61.87em) {
+    .pop-up-pedido {
+      &.aberto {
+        & .container {
+          width: 80vw;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 41.25em) {
+    .pop-up-pedido {
+      &.aberto {
+        & .container {
+          width: 100svw;
+          height: 100svh;
+          justify-content: center;
+
+          & .box {
+            flex-direction: column;
+            & .column {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* texto informando adicionar o aparelho para melhorias do site
+nome da pessoa
+nome do aparelho
+treino faz parte de (ombro, costas...)
+descricao do aparelho
+nome do exercicio feito com o aparelho
+foto do aparelho(opcional)
+comentário
+email ou telefone de contato */

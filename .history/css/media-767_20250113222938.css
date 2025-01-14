@@ -34,14 +34,7 @@
             content: '';
             width: 200%;
             height: 15rem;
-            transform: rotate(-30deg) translate(-2rem, 4rem);
-            background-color: var(--cor-fundo);
-          }
-          &::before {
-            content: '';
-            width: 200%;
-            height: 15rem;
-            transform: rotate(-30deg) translate(2rem, -9rem);
+            transform: rotate(-30deg) translate(-2rem, 9rem);
             background-color: var(--cor-fundo);
           }
         }
@@ -51,7 +44,7 @@
         max-width: 30%;
         width: 5rem;
         height: 5rem;
-        color: var(--cor-texto);
+        color: var(--cor-fundo);
         z-index: 10001;
       }
     }
@@ -81,6 +74,7 @@
           flex-direction: column;
           align-items: center;
           gap: 5rem;
+          transform: translateY(7rem);
           & li {
             &:hover {
               text-decoration: underline;
@@ -96,7 +90,6 @@
       }
       & .nav-icone--fechar {
         display: none;
-        color: var(--cor-fundo);
       }
     }
 

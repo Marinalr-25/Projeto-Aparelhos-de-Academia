@@ -32,16 +32,9 @@
 
           &::after {
             content: '';
-            width: 200%;
-            height: 15rem;
-            transform: rotate(-30deg) translate(-2rem, 4rem);
-            background-color: var(--cor-fundo);
-          }
-          &::before {
-            content: '';
-            width: 200%;
-            height: 15rem;
-            transform: rotate(-30deg) translate(2rem, -9rem);
+            width: 100%;
+            height: 10px;
+            transform: rotate(-45deg) translateX(5rem);
             background-color: var(--cor-fundo);
           }
         }
@@ -51,7 +44,7 @@
         max-width: 30%;
         width: 5rem;
         height: 5rem;
-        color: var(--cor-texto);
+        color: var(--cor-fundo);
         z-index: 10001;
       }
     }
@@ -96,7 +89,6 @@
       }
       & .nav-icone--fechar {
         display: none;
-        color: var(--cor-fundo);
       }
     }
 

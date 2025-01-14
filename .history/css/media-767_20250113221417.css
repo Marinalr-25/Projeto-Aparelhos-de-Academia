@@ -26,24 +26,9 @@
 
         &.aberto {
           display: flex;
-          opacity: 1;
+          opacity: 0.9;
           transform: translateX(0);
           padding: 1rem;
-
-          &::after {
-            content: '';
-            width: 200%;
-            height: 15rem;
-            transform: rotate(-30deg) translate(-2rem, 4rem);
-            background-color: var(--cor-fundo);
-          }
-          &::before {
-            content: '';
-            width: 200%;
-            height: 15rem;
-            transform: rotate(-30deg) translate(2rem, -9rem);
-            background-color: var(--cor-fundo);
-          }
         }
       }
       & .nav-icones {
@@ -51,6 +36,8 @@
         max-width: 30%;
         width: 5rem;
         height: 5rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
         color: var(--cor-texto);
         z-index: 10001;
       }
@@ -67,11 +54,12 @@
         transform: translateX(100%);
         transition: opacity 0.3s ease, transform 0.3s ease;
         align-items: center;
-        background-color: #f1f1f1;
+        box-shadow: inset 0 0 10px 3px var(--cor-texto);
+        background-color: var(--cor-fundo);
         opacity: 0.9;
         position: fixed;
         top: 0;
-        width: 12rem;
+        width: 15%;
         height: 40rem;
         right: 0;
         z-index: 1000;
@@ -80,14 +68,10 @@
         & ul {
           flex-direction: column;
           align-items: center;
-          gap: 5rem;
           & li {
             &:hover {
               text-decoration: underline;
             }
-          }
-          & a {
-            color: var(--cor-fundo);
           }
         }
       }
@@ -96,7 +80,6 @@
       }
       & .nav-icone--fechar {
         display: none;
-        color: var(--cor-fundo);
       }
     }
 

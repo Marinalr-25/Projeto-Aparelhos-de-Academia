@@ -162,7 +162,7 @@
   }
 }
 
-body.modal-aberto {
+body.pop-up-pedido.aberto {
   overflow: hidden;
 }
 

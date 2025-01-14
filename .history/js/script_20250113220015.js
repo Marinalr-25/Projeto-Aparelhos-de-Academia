@@ -74,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
   pedidoClasse.forEach((pedido) => {
     pedido.addEventListener('click', function () {
       popUpPedido.classList.toggle('aberto');
-      document.body.classList.toggle('modal-aberto');
       fecharNav();
     });
   });
